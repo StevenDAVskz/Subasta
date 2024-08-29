@@ -1,0 +1,26 @@
+@startuml
+class Usuario {
+  - nombre: String
+  - apellido: String
+  - Email: String
+  - direccion: String
+
+}
+
+class Articulo {
+  - NombreArt: String
+  - descripcion: String
+  - Estado: String
+  - precioInicial: int
+}
+
+class Pujas{
+  Articulo()
+  - PrecioMayor: int
+  - RegistroPuja: String
+  - IDPostor: int
+
+}
+
+Persona <|-- Empleado
+@enduml
